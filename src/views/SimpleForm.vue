@@ -21,13 +21,11 @@
       <h3>Are pets allowed?</h3>
 
       <div>
-        <input type="radio" v-model="event.pets" :value="1" name="pets" />
-        <label>Yes</label>
+        <BaseRadio v-model="event.pets" :value="1" label="Yes" name="pets" />
       </div>
 
       <div>
-        <input type="radio" name="pets" v-model="event.pets" :value="0" />
-        <label>No</label>
+        <BaseRadio v-model="event.pets" :value="0" label="No" name="pets" />
       </div>
 
       <h3>Extras</h3>
@@ -51,11 +49,13 @@
 import BaseInput from "../components/BaseInput.vue";
 // import BaseSelect from "../components/BaseSelect.vue";
 // import BaseCheckbox from "../components/BaseCheckbox.vue";
+// import BaseRadio from "../components/BaseRadio.vue";
 export default {
   components: {
     BaseInput,
     // BaseSelect,
     // BaseCheckbox,
+    // BaseRadio
   },
   data() {
     return {
